@@ -1,0 +1,39 @@
+@import '../../base.scss';
+
+.modal{
+    box-sizing: border-box;
+    position: relative;
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: $background-footer;
+    border-radius: 20px;
+    padding: 30px;
+    color: $white;
+    z-index: 20;
+    overflow: hidden;
+}
+
+.title{
+    @include title;
+    font-family:'Lovelace';
+    color: $white;
+}
+
+.text{
+    font-family:  "Montserrat", "Arial ", sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 28px;
+    text-align: center;
+    color: $red;
+    margin: 15px 0 0;
+}
+
+.button{
+    @include button
+}
+

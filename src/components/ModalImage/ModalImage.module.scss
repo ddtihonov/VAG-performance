@@ -1,0 +1,115 @@
+@import '../../base.scss';
+
+
+@keyframes opacity {
+    0%{
+        opacity: 0;
+    }
+    
+    100%{
+        opacity: 1;
+    }
+}
+
+
+.modal{
+    box-sizing: border-box;
+    position: relative;
+    background: transparent;
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    color: $white;
+    z-index: 20;
+    animation: opacity 1s ease-in-out;
+}
+
+.modal_active{
+    opacity: 1;
+    display: none;
+}
+
+.close_icon{
+    position: absolute;
+    top: -28px;
+    right: 5px;
+    background-image: url(../../image/Header/close.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    &:hover{
+        cursor: pointer;
+        filter: drop-shadow(0 0 5px $white);
+        transition: .3s;
+    }
+}
+
+.image{
+    width: 100%;
+}
+
+.box{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 15px;
+}
+
+.button_left{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 10px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: 0;
+    background-image: url(../../image/ModalImage/left.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    &:hover{
+        cursor: pointer;
+        filter: drop-shadow(0 0 5px $white);
+        transition: .3s;
+    }
+}
+
+.button_right{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 10px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: 0;
+    background-image: url(../../image/ModalImage/right.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    &:hover{
+        cursor: pointer;
+        filter: drop-shadow(0 0 5px $white);
+        transition: .3s;
+    }
+}
+
+.text{
+    font-family:  "Montserrat", "Arial ", sans-serif;
+    margin: 0 15px 0 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+}

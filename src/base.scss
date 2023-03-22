@@ -1,0 +1,96 @@
+$white: #FFF;
+$black: #252525;
+$background-header:rgba(0,0,0,.5);
+$text-box: #898989;
+$text-gray: #8d8d8d;
+$title: #2e3342;
+$red:#CD2122; 
+$background-color:#f7f2eb;
+$background-footer: #464f57;
+$button: rgba(255, 255, 255, .5);
+
+
+
+@mixin main-column {
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    width: 100%;
+    padding: 50px 20px;
+
+    @media(max-width: 768px){
+        padding: 40px 10px;
+    }
+
+    @media(max-width: 425px){
+        padding: 30px 10px;
+    }
+}
+
+@mixin box-column {
+    box-sizing: border-box;
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin container-column {
+    max-width: 1440px;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin title {
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 1.2;
+    text-align: center;
+    color: $title;
+    margin: 0;
+
+    @media(max-width: 1020px){
+        font-size: 30px;
+    }
+
+    @media(max-width: 768px){
+            font-size: 26px;
+        }
+
+        & span {
+            color: $red;
+        }
+}
+
+@mixin button{
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    padding: 0;
+    color: $white;
+    width: 180px;
+    height: 50px;
+    margin: 30px 0 0;
+    border-radius: 4px;
+    background: $red;
+
+    &:hover{
+        cursor: pointer;
+        transform: scale( .90 );
+        transition: .5s;
+    }
+}
+
+
+

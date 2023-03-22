@@ -1,0 +1,14 @@
+@import '../../base.scss';
+
+.item{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+}
+
+.video{
+    width: 100%;
+    aspect-ratio: 16/9;
+}
