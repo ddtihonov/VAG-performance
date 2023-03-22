@@ -3,7 +3,6 @@
 .main{
     @include main-column;
     background-color: $black;
-    padding: 50px 20px;
 }
 
 .container{
@@ -64,18 +63,13 @@
 
 @media(max-width: 768px){
 
-    .main{
-        padding: 30px 20px;
-    }
-
     .container{
-        @include container-column;
-            flex-direction: column;
-            align-items: flex-start;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .logo{
-        min-width: 150px;
+        width: 150px;
     }
 }
 

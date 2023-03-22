@@ -1,0 +1,33 @@
+@import '../../base.scss';
+
+.main {
+    @include main-column;
+}
+
+.container{
+    @include container-column;
+}
+
+.title{
+    @include title;
+}
+
+.subtitle{
+    @include title-left;
+}
+
+.text{
+    @include text;
+    margin: 0;
+}
+
+.box{
+    width: 100%;
+    margin-top: 30px;
+}
+
+.image{
+    width: 50%;
+    float: left;
+    margin:  0 20px 0 -20px;
+}
